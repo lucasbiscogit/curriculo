@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/SEU-CODIGO.js" crossorigin="anonymous"></script>
+
+  <style>
+    #texto-escondido {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleTexto() {
+      var texto = document.getElementById("texto-escondido");
+      if (texto.style.display === "none") {
+        texto.style.display = "block";
+      } else {
+        texto.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="toggleTexto()">Mostrar/Esconder Texto</button>
+  <div id="texto-escondido">
+    <p>Aqui está o texto que pode ser mostrado ou escondido.</p>
+  </div>
+</body>
+</html>
+Neste exemplo, o CSS define o elemento com o id "texto-escondido" com display: none; para que ele esteja inicialmente oculto. O JavaScript define a função toggleTexto() que é chamada quando o botão é clicado. Essa função verifica o estado de exibição atual do elemento e alterna entre "block" (exibido) e "none" (oculto). Ao clicar no botão, o texto dentro da <div> será mostrado ou escondido, dependendo do seu estado atual.
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/f19b4f6f1c.js" crossorigin="anonymous"></script>
+
+
+<script>
+  function toggleTexto() {
+    var texto = document.getElementById("texto-escondido");
+    var seta = document.getElementById("seta");
+    if (texto.style.display === "none") {
+      texto.style.display = "block";
+      seta.classList.remove("fa-arrow-down");
+      seta.classList.add("fa-arrow-up");
+    } else {
+      texto.style.display = "none";
+      seta.classList.remove("fa-arrow-up");
+      seta.classList.add("fa-arrow-down");
+    }
+  }
+</script>
+ 
+</head>
+
+<body>
+<p>QQQQQQ.</p>
+<p>QQQQQQ.</p>
+<p>QQQQQQ.</p>
+<p>QQQQQQ.</p>
+  <div onclick="toggleTexto()">
+    <i id="seta" class="fa fa-arrow-down" aria-hidden="true"></i>
+  </div>
+  <div id="texto-escondido">
+    <p>Aqui está o texto que pode ser mostrado ou escondido.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p>
+	<p>Lucas.</p><p>Lucas.</p>
+	
+  </div>
+  
+  <p>JJJJJJJ.</p>
+</body>
+
+
+
