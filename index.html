@@ -1,18 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
 <head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
   <script src="https://kit.fontawesome.com/f19b4f6f1c.js" crossorigin="anonymous"></script>
 
+  <style>
+    #texto-escondido {
+      display: none;
+    }
+  </style>
+
+  <title>Lucas Bisco</title>
 
 <script>
-  function toggleTexto() {
+  function toggleTexto() 
+  {
     var texto = document.getElementById("texto-escondido");
     var seta = document.getElementById("seta");
     if (texto.style.display === "none") {
       texto.style.display = "block";
       seta.classList.remove("fa-arrow-down");
       seta.classList.add("fa-arrow-up");
-    } else {
+    } else 
+    {
       texto.style.display = "none";
       seta.classList.remove("fa-arrow-up");
       seta.classList.add("fa-arrow-down");
@@ -23,28 +37,30 @@
 </head>
 
 <body>
-<p>QQQQQQ.</p>
-<p>QQQQQQ.</p>
-<p>QQQQQQ.</p>
-<p>QQQQQQ.</p>
+  <h1><a href="teste.html" title="Textos" target="_blank">Lucas Bisco Tavares</a></h1>
+  <h1><a href="Teste2.html" title="Textos" target="_blank">Lucas</a></h1>
+<p>Este.</p>
+<p>Texto.</p>
+<p>será.</p>
+<p>sempre sempre.</p>
   <div onclick="toggleTexto()">
     <i id="seta" class="fa fa-arrow-down" aria-hidden="true"></i>
   </div>
   <div id="texto-escondido">
     <p>Aqui está o texto que pode ser mostrado ou escondido.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p>
-	<p>Lucas.</p><p>Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p>
+	<p id="texto">Lucas.</p><p>Ate aqui é escondido.</p>
 	
   </div>
   
-  <p>JJJJJJJ.</p>
+  <p>Este será visivel</p>
 </body>
 
 
