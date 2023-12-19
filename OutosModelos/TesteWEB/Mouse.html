@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .conteudo-escondido {
+      display: none;
+    }
+  </style>
+  <script>
+    function mostrarConteudo(id) {
+      var conteudo = document.getElementById(id);
+      conteudo.style.display = "block";
+    }
+
+    function esconderConteudo(id) {
+      var conteudo = document.getElementById(id);
+      conteudo.style.display = "none";
+    }
+  </script>
+</head>
+<body>
+  <div onmouseover="mostrarConteudo('conteudo1')" onmouseout="esconderConteudo('conteudo1')">
+    Passe o mouse aqui para mostrar o conteúdo.
+  </div>
+  <div id="conteudo1" class="conteudo-escondido">
+    <p>Este é o conteúdo 1 que será escondido/mostrado.</p>
+  </div>
+
+  <!-- Resto do código... -->
+</body>
+</html>

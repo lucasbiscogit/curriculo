@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Elemento que receberá o menu -->
+  <div class="menu-placeholder"></div>
+
+  <h1>Conteúdo da página</h1>
+  <!-- Aqui vai o restante do conteúdo da página -->
+
+  <!-- Script para carregar o menu -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      // Carregar o conteúdo do menu a partir do arquivo menu.html e inseri-lo no elemento com a classe "menu-placeholder"
+      $(".menu-placeholder").load("menu.html nav");
+    });
+  </script>
+</body>
+</html>

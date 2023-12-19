@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .conteudo-escondido {
+      display: none;
+    }
+    .seta-botao {
+      background: url(setabaixo.png) no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function toggleConteudo(id) {
+      var conteudo = document.getElementById(id);
+      if (conteudo.style.display === "none") {
+        conteudo.style.display = "block";
+      } else {
+        conteudo.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <button class="seta-botao" onclick="toggleConteudo('conteudo1')"></button>
+  <div id="conteudo1" class="conteudo-escondido">
+    <p>Este é o conteúdo 1 que será escondido/mostrado.</p>
+  </div>
+
+  <!-- Resto do código... -->
+</body>
+</html>

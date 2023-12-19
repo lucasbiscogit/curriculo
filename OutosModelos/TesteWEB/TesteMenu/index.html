@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Elemento que receberá o menu -->
+  <div id="menu-placeholder"></div>
+
+  <h1>Conteúdo da página</h1>
+  <!-- Aqui vai o restante do conteúdo da página -->
+
+  <!-- Script para carregar o menu -->
+  <script>
+    // Função para carregar o conteúdo do menu
+    function loadMenu() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "menu.html", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            document.getElementById("menu-placeholder").innerHTML = xhr.responseText;
+          }
+        }
+      };
+      xhr.send();
+    }
+
+    // Chama a função para carregar o menu
+    loadMenu();
+  </script>
+</body>
+</html>

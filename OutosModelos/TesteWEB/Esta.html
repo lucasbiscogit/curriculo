@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .conteudo-escondido {
+      display: none;
+    }
+	
+	    .seta-botao {
+      background: url(setabaixo.png) no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+    }
+	
+  </style>
+  <script>
+    function toggleConteudo(id) {
+      var conteudo = document.getElementById(id);
+      if (conteudo.style.display === "none") {
+        conteudo.style.display = "block";
+      } else {
+        conteudo.style.display = "none";
+      }
+    }
+  </script>
+  
+  
+</head>
+<body>
+  <button class="seta-botao" onclick="toggleConteudo('conteudo1')"></button>
+  <div id="conteudo1" class="conteudo-escondido">
+    <p>Este é o conteúdo 1 que será escondido/mostrado.</p>
+  </div>
+
+  <button class="seta-botao" onclick="toggleConteudo('conteudo2')"></button>
+  <div id="conteudo2" class="conteudo-escondido">
+    <p>Este é o conteúdo 2 que será escondido/mostrado.</p>
+  </div>
+
+  <button class="seta-botao" onclick="toggleConteudo('conteudo3')"></button>
+  <div id="conteudo3" class="conteudo-escondido">
+    <p>Este é o conteúdo 3 que será escondido/mostrado.</p>
+  </div>
+  
+    <button onclick="toggleConteudo('conteudo4')">Mostrar/Esconder 4</button>
+  <div id="conteudo4" class="conteudo-escondido">
+    <p>Este é o conteúdo 4 que será escondido/mostrado.</p>
+  </div>
+  
+    <button onclick="toggleConteudo('conteudo5')">Mostrar/Esconder 5</button>
+  <div id="conteudo5" class="conteudo-escondido">
+    <p>Este é o conteúdo 5 que será escondido/mostrado.</p>
+  </div>
+  
+    <button onclick="toggleConteudo('conteudo6')">Mostrar/Esconder 6</button>
+  <div id="conteudo6" class="conteudo-escondido">
+    <p>Este é o conteúdo 6 que será escondido/mostrado.</p>
+  </div>
+</body>
+</html>
